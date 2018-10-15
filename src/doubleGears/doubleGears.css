@@ -1,0 +1,13 @@
+.double-gears--svg{
+    height: 150px;
+}
+.double-gears--svg PATH {
+    transform-origin: 93.5px 93.5px;
+    fill: #1b5299;
+}
+.double-gears--svg .innerGear{
+    animation: rotate 3s reverse infinite linear;
+}
+.double-gears--svg .outerGear{
+    animation: rotate 3s infinite linear;
+}

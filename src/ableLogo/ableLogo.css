@@ -1,0 +1,82 @@
+.able-logo--svg{
+    height: 200px;
+}
+.able-logo--svg PATH{
+    transform-origin: 50% 50%;
+}
+
+.able-logo--svg .first-path{
+    stroke: #1b5299;
+    stroke-dasharray: 550.33;
+    stroke-dashoffset: 550.33;
+    
+    stroke-width: 1px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.able-logo--svg.start .first-path {
+    animation: dash 2.5s forwards;
+}
+.able-logo--svg .second-path{
+    animation: loadInnerPath 2.5s forwards;
+    animation-delay: .2s;
+    stroke: #1b5299;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    /* 393.8 */
+    stroke-dasharray: 393.8;
+    stroke-dashoffset: 393.8;
+}
+.able-logo--svg .word-path{
+    fill: #1b5299;
+    opacity: 0;
+    
+}
+.able-logo--svg.start .word-path{
+    animation: fadein .9s forwards;
+    animation-delay: 2.8s;
+}
+
+@keyframes dash {
+    0% {
+        transform: rotate(400deg);
+    }
+    50% {
+        stroke-dashoffset: 0;
+        stroke-width: 4px;
+        transform: rotate(350deg);
+        
+    }
+    100% {
+        transform: rotate(574deg);
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fadein {
+    0% {
+ 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes loadInnerPath {
+    0%{
+        transform: rotate(1200deg);
+        stroke-width: 1px;
+    }
+    50% {
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+       
+    }
+    80%{
+        transform: rotate(780deg);
+    }
+    100% {
+        stroke-width: 1px;
+        stroke-dashoffset: 0;
+        transform: rotate(800deg);
+    }
+}

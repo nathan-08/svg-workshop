@@ -1,0 +1,18 @@
+.gear--svg{
+    height: 40px;
+    width: 40px;
+}
+
+.gear--svg PATH{
+    animation: rotate 2.4s infinite linear;
+    transform-origin: 75px 75px;
+}
+.gear--svg PATH {
+    fill: #1b5299;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

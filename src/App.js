@@ -1,25 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import SimplySafe from './simplySafe/SimplySafe';
+import "./App.css";
+import Gear from './gear/Gear';
+import DoubleGears from './doubleGears/DoubleGears.jsx';
+import AbleLogo from './ableLogo/AbleLogo';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="app--component">
+        <svg id="triangle--svg" height="100" width="100" viewBox="0 0 100 100" fill="#1b5299">
+          <path d="M 0 100 L 50 0 L 100 100 0 100" />
+        </svg>
+        <SimplySafe/>
+        
+        <div className="gearbox">
+          <Gear customSVGStyles={{position:"relative",transform:"scale(1.4)",top:"12px",right:"4px"}}
+                customPathStyles={{animationDirection:"reverse"}}
+          />
+          <Gear />
+        </div>
+        <DoubleGears />
+        <AbleLogo />
       </div>
     );
   }

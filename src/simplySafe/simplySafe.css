@@ -1,0 +1,63 @@
+#main-logo--svg PATH{
+  fill: #1b5299;
+}
+
+#main-logo--svg.hover #first-letter {
+  animation: lighten .9s;
+}
+
+#main-logo--svg.hover #letter-i {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.1s;
+}
+#main-logo--svg.hover #letter-m {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.2s;
+}
+#main-logo--svg.hover #letter-p {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.3s;
+}
+#main-logo--svg.hover #letter-l {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.4s;
+}
+#main-logo--svg.hover #letter-y {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.5s;
+}
+#main-logo--svg.hover #letter-s {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.6s;
+}
+#main-logo--svg.hover #letter-a {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.7s;
+}
+#main-logo--svg.hover #letter-f {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.8s;
+}
+#main-logo--svg.hover #letter-e {
+  animation: letter-bounce 0.6s;
+  animation-delay: 0.9s;
+}
+
+@keyframes letter-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+    fill: #95b8d1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes lighten {
+  
+  50% {
+    fill: #95b8d1;
+  }
+}
