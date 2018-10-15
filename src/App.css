@@ -10,15 +10,37 @@
   padding: 4rem 0;
 }
 SVG {
-  
   cursor: pointer;
 }
 .app--component #triangle--svg:hover {
   animation: bounce 1s linear infinite;
 }
-#pause-button--svg{
 
+.gearbox {
+  position: relative;
+  height: 200px;
+  width:  200px;
+  margin-left: -20px;
 }
+.gearbox SVG {
+  position: absolute;
+}
+.gearbox SVG:first-child{
+  transform: scale(1.4);
+  right: 42px;
+  top: 12px;
+}
+  .gearbox SVG:first-child PATH{
+    animation-direction: reverse;
+  }
+.gearbox SVG:nth-child(2){
+  right: 0px;
+}
+.gearbox SVG:nth-child(3){
+  top: 48px;
+  left: 28px;
+}
+
 @keyframes bounce {
   0%{
     transform: scale(1) ;

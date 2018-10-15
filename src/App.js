@@ -15,12 +15,10 @@ class App extends Component {
         <SimplySafe/>
         
         <div className="gearbox">
-          <Gear customSVGStyles={{position:"relative",transform:"scale(1.4)",top:"12px",right:"4px"}}
-                customPathStyles={{animationDirection:"reverse"}}
-          />
           <Gear />
+          <Gear />
+          <DoubleGears />
         </div>
-        <DoubleGears />
         <AbleLogo />
       </div>
     );
